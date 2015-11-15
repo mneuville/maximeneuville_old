@@ -164,7 +164,7 @@
                                             <li>Maintenance des sites existants et support client</li>
                                             <li>Développement de module interactif (Flash, SVG, Html5, Javascript)</li>
                                             <li>Création de site via des <strong>CMS open source</strong> (Drupal, Wordpress, Prestashop)</li>
-                                            <li>Rédaction de docuentations techniques et utilisateurs</li>
+                                            <li>Rédaction de documentations techniques et utilisateurs</li>
                                             <li>Développement de tests unitaires et fonctionnels</li>
                                         </ul>
                                     </div>
