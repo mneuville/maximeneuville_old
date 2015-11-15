@@ -1,0 +1,11 @@
+body {
+	background: #000000;
+}
+
+#animation {
+	background: transparent;
+	width: 700px;
+	height: 600px;
+	margin: 60px auto 0 auto;
+	border: 8px solid #FFFFFF;
+}

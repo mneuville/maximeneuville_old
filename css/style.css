@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* LAYOUT */
+@font-face { font-family: 'hermes'; src: url('../fonts/hermes.eot'); src: url('../fonts/hermes.eot?#iefix') format('embedded-opentype'), url('../fonts/hermes.woff2') format('woff2'), url('../fonts/hermes.woff') format('woff'), url('../fonts/hermes.ttf') format('truetype'), url('../fonts/hermes.svg#hermes') format('svg'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'hermesBold'; src: url('../fonts/hermes-bold.eot'); src: url('../fonts/hermes-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/hermes-bold.woff2') format('woff2'), url('../fonts/hermes-bold.woff') format('woff'), url('../fonts/hermes-bold.ttf') format('truetype'), url('../fonts/hermes-bold.svg#hermesBold') format('svg'); font-weight: 700; font-style: normal; }
+body { position: relative; background: #FFF url('../medias/background.png') no-repeat; background-position: calc(50% - 375px) top; background-attachment: fixed; font-family: 'hermes', Arial, sans-serif; color: #FFF; line-height: 1; padding-bottom: 20px; }
+h1 { position: relative; float: left; font-size: 2.6em; margin-top: 20px; font-family: "hermesBold", Arial, sans-serif; margin-left: 2px; }
+h1 .mask { position: absolute; width: 20px; height: 20px; background: #1A2530; bottom: -4px; left: -11px; -ms-transform: rotate(-30deg); -webkit-transform: rotate(-30deg); transform: rotate(-30deg); }
+h2 { position: relative; text-transform: uppercase; font-size: 2em; border-bottom: 1px solid #FFF; float: left; margin-bottom: 20px; padding-bottom: 5px; }
+h2 .border { position: absolute; width: 60px; height: 2px; background: #E74C3C; bottom: -3px; right: 0; }
+p { font-size: 0.9em; }
+a { color: #FFF; }
+.clearfix { clear: both; }
+.wrapper { position: relative; width: 1170px; margin: 0 auto; }
+
+/* BUTTON */
+.btn { float:left; border: 1px solid #FFF; padding: 8px 10px; text-decoration: none; font-size: 0.9em; text-transform: uppercase; }
+.btn:hover { border: 1px solid #E74C3C; color: #E74C3C; -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s; }
+.btn.disable, .btn.disable:hover { border-color: #1A2530; color: #1A2530 !important; cursor: default; }
+
+/* HEADER */
+header { height: 90px; }
+header .name { text-transform: uppercase; font-size: 0.8em; color: #34495E; font-family: "hermes"; letter-spacing: -1px; }
+
+/* MENU */
+header nav { float: right; font-size: 1.1em; margin-top: 40px; }
+header nav ul li { display: inline; padding-right: 20px; }
+header nav ul li:last-child { padding-right: 0; }
+header nav a { position: relative; display: inline-block; outline: none; color: #1A2530; text-decoration: none; text-transform: uppercase; font-size: 1.2em; overflow: hidden; }
+header nav a:hover { color: #E74C3C; -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s; }
+header nav a span { position: relative; display: inline-block; -webkit-transition: -webkit-transform 0.3s; -moz-transition: -moz-transform 0.3s; transition: transform 0.3s; }
+header nav a span::before { letter-spacing: -1px; position: absolute; top: 100%; color: #E74C3C; content: attr(data-hover); font-family: "hermesBold"; margin-top: 3px; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+header nav a:hover span,
+header nav a:focus span { -webkit-transform: translateY(-110%); -moz-transform: translateY(-110%); transform: translateY(-110%); }
+
+/* ARTICLE */
+article { padding: 2%; }
+
+/* À PROPOS */
+#about { position: relative; background: #E74C3C; margin-bottom: 0; }
+#about h2 { display: none; }
+#about p { font-size: 1.5em; width: 72%; margin-bottom: 15px; }
+#about p.last { margin: 0; }
+#about a { text-decoration: none; font-family: "hermesBold"; }
+#about a:hover { color: #1A2530; -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s;}
+#about .arrow { position: absolute; bottom: -37px; left: 50%; margin-left: -33px; background: transparent url('../medias/about-arrow.png') no-repeat; width: 66px; height:	37px; }
+#about .more-info { position: absolute; width: 210px; right: 0; top: 25px; padding: 30px 16px 0 0; }
+#about .more-info h3 { background: #2c3e50; text-transform: uppercase; font-size: 1em; padding: 5px 8px; width: 230px; color: #FFF; margin: 0; position: absolute; right: -20px; top: 0px; }
+#about .more-info h3:after { border-width: 10px; border-style: solid; border-color: #0f1821 transparent transparent #0f1821; bottom: -20px; content: ""; position: absolute; right: 0; }
+#about .more-info p { margin: 0; padding: 7px 5px; font-size: 0.9em; width: auto; line-height: 22px; }
+
+/* COMPÉTENCES */
+#skills, #projects, #archives { background: #34495E; }
+#skills, #archives { overflow: hidden; }
+#skills ul { overflow: hidden; }
+#skills li { width: 24%; height: 65px; float: left; margin: 0 1% 1% 0; }
+#skills li h4 { text-transform: uppercase; color: #1A2530; font-family: "hermesBold"; font-size: 1em; }
+#skills li p { margin-top: 5px; padding-left: 50px; }
+#skills li .icon { margin: 2px 7px 0 0; }
+#skills .icon { float: left; background-color: #1A2530; }
+#skills .btn { padding: 12px 10px 10px 10px; margin-top: 5px; }
+
+/* PARCOURS */
+#career { overflow: hidden; padding: 0; width: 100%; }
+#career > div { background: #0f1821; padding: 2%; width: 46%; height: 610px; float: left; }
+#career p { font-size: 0.9em; }
+#career .timeline { position: relative; }
+#career .timeline .line { position: absolute; background-color: #FFF; width: 2px; height: 550px; border-radius: 5px; left: 4.5%; }
+#career .timeline ul { margin-top: 10px; float: left; }
+#career .timeline li { width: 100%; float: left; margin-bottom: 20px; }
+#career .timeline .container { width: 80%; height: auto; background-color: #FFF; color: #0f1821; position: relative; padding: 20px; float: right; line-height: 1em; }
+#career .timeline .container:after { top: 9px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-width: 10px; }
+#career .timeline .container.left:after { right: -18px; border-left-color: #FFF; }
+#career .timeline .container.right:after { left: -18px; border-right-color: #FFF; }
+#career .timeline .container h4 { font-family: "hermesBold"; font-size: 1.1em; float: left; color: #34495E;}
+#career .timeline .container .date { font-family: "hermesBold"; font-size: 0.9em; float: right; line-height: 1.2em; }
+#career .timeline .container p { margin-top: 10px; }
+#career .timeline .container strong { font-family: "hermesBold"; }
+#career .timeline .container ul { list-style-type: disc; }
+#career .timeline .container ul li { font-size: 0.9em; margin: 0; margin-left: 4%; padding: 0; width: 96%; }
+#career .timeline .company { color: #AAA; font-size: 1em; margin-top: 5px; font-style: italic; }
+#career .timeline .icon { position: absolute; top: 0; color: #FFF; font-size: 0.7em; text-align: center; line-height: 4em; }
+#career .timeline .right .icon { left: -65px; }
+
+/* EXPÉRIENCES */
+#experiences .icon { background: #E74C3C; }
+#experiences .timeline .container h4 { color: #E74C3C; }
+
+/* FORMATIONS */
+#formations .icon { background: #34495E; }
+#formations .timeline .line { left: 4%; }
+
+/* PROJECTS */
+#projects { overflow: hidden; position: relative; }
+#projects > figure { position: relative; position: relative; width: 215px; height: 200px; background-color: #FFF; float: left; color: #0f1821; margin: 0 1% 1% 0; }
+#projects > figure:nth-child(5n+2) { margin-right: 0; }
+#projects > figure figcaption { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0px solid #E74C3C;transition: border-width 0.2s ease 0s, border-color 0.2s ease 0s; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+#projects > figure figcaption:hover { border: 6px solid #E74C3C; }
+#projects > figure figcaption a:hover .link { background-color: #E74C3C; color: #FFF; opacity: 1; }
+#projects > figure a { display: block; width: 100%; height: 100%; font-size: 0.8em; text-align: center; text-decoration: none; text-transform: uppercase; position: relative; }
+#projects > figure a .link { background-color: #E74C3C; width: 100%; height: 20px; padding-top: 9px; color: #E74C3C; position: absolute; bottom: 0; left: 0; opacity: 0; -o-transition: .3s; -ms-transition: .3s; -moz-transition: .3s; -webkit-transition: .3s; transition: .3s; }
+#projects > figure figcaption .container { display: none; }
+
+#detail { position: absolute; background-color: #34495e; width: 100%; height: 412px !important; top: 81px; left: 0; z-index: 1; display: none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; overflow: visible; }
+#detail .content { width: 1051px; }
+#detail h4 { font-size: 1.5em; margin-bottom: 2%; font-family: "hermesBold"; }
+#detail img { background-color: #E74C3C; float: left; height: 365px; width: 500px; margin-left: 25px; }
+#detail .right { width: 550px; float: right; margin-right: 70px; }
+#detail .right ul { margin: 10px 0 10px 20px; }
+#detail .right li { list-style-type: disc; font-size: 0.9em; margin-bottom: 3px; }
+#detail .container a:hover { color: #E74C3C; }
+#detail p { line-height: 1.3em; }
+
+#detail .btn, #archives .btn { margin-top: 10px; clear: both; }
+#detail a.close { right: 12px; position: absolute; color: #FFF; background-color: #1A2530; font-size: 0.9em; text-indent: 100%; white-space: nowrap; overflow: hidden; margin: 0; outline: 0; }
+#detail a.close:hover { background-color: #E74C3C; }
+
+
+
+#detail a.next, #detail a.previous {
+	position: absolute;
+	background-color: transparent;
+	right: 12px;
+	bottom: 0;
+	font-size: 0.9em; text-indent: 100%; white-space: nowrap; overflow: hidden; margin: 0; outline: 0;
+}
+#detail a.previous { right: 57px; }
+#detail a.next.disable, #detail a.previous.disable { opacity: 0.1; cursor: default; }
+
+/* FOOTER */
+footer { background: #E74C3C; overflow: hidden; height: auto; padding: 20px; }
+footer .contact li { margin-right: 12px; float: left; }
+footer .contact li a { display: block; width: 45px; height: 45px; text-indent: -5000px; text-decoration: none; color: #FFF; }
+footer .contact li a .icon { float: left; }
+footer .contact li a.open { text-indent: inherit; width: auto; font-size: 1em; line-height: 43px; }
+footer .contact li a.open .icon { margin-right: 10px; }
+footer a.archives { float: right; line-height: 43px; float: right; font-size: 0.7em; text-transform: uppercase; text-decoration: none; }
+footer a.archives:hover { color: #1a2530; }
+
+/* BACK TO TOP */
+#back-top { position: fixed; z-index:999; bottom: 1em; right: 1em; text-decoration: none; color: #FFF; background-color: #1A2530; font-size: 0.9em; display: none; width: 45px; height: 45px; border-radius: 50% 50%; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+#back-top:hover { background-color: #E74C3C; }
+
+/* ICONS */
+.icon { background-color: #FFF; display: block; width: 45px; height: 45px; border-radius: 50% 50%; }
+.icon > i { margin: 7px auto; display: block; width: 33px; height: 32px; background-repeat: no-repeat; background-image: url('../medias/icons.png'); }
+.icon > .github { background-position: 1px -478px; }
+.icon > .viadeo { background-position: 1px -449px; }
+.icon > .linkedin { background-position: 1px -416px; }
+.icon > .twitter { background-position: 1px -383px; }
+.icon > .phone { background-position: 1px -513px; }
+.icon > .email { background-position: 1px -545px; }
+.icon > .symfony { background-position: 2px -257px; }
+.icon > .php { background-position: 1px -192px; }
+.icon > .versionning { background-position: 1px -320px; }
+.icon > .agile { background-position: 2px -1px; }
+.icon > .mobile { background-position: 1px -161px; }
+.icon > .js { background-position: 1px -352px; }
+.icon > .api { background-position: 1px -32px; }
+.icon > .conception { background-position: 1px -96px; }
+.icon > .cms { background-position: 2px -64px; }
+.icon > .tests { background-position: 1px -288px; }
+.icon > .sql { background-position: 1px -225px; }
+.icon > .flash { background-position: 2px -129px; }
+.icon > .school { background-position: 0px -577px; }
+.icon > .close { background-position: 1px -609px; }
+.icon > .top { background-position: 1px -641px; }
+.icon > .next { background-position: 1px -672px; }
+.icon > .previous { background-position: 0px -704px; }
+
+/* ICONS - HOVER */
+footer .contact li a:hover .icon > .github { background-position: -34px -478px; }
+footer .contact li a:hover .icon > .viadeo { background-position: -34px -449px; }
+footer .contact li a:hover .icon > .linkedin { background-position: -34px -416px; }
+footer .contact li a:hover .icon > .twitter { background-position: -34px -383px; }
+footer .contact li a:hover .icon > .phone { background-position: -34px -513px; }
+footer .contact li a:hover .icon > .email { background-position: -34px -545px; }
+a.icon:hover:not(.disable) > .next { background-position: -34px -672px; }
+a.icon:hover:not(.disable) > .previous { background-position: -34px -704px; }
+
+/* KONAMI */
+#secret { position: absolute; background: #000; top: 0; left: 0; width: 100%; height: 1119px; display: none; }
+#secret #videos li { width: 25%; height: 373px; float: left; }
+#secret #videos li.title { width: 50%; background: #000; }
+#secret #videos li.title img { width: 100%; height: 100%; max-width: 490px; display: block; margin: 0 auto; }
