@@ -199,7 +199,7 @@
                                         <h4>Formation HTML5/CSS3</h4>
                                         <div class="clearfix"></div>
                                         <div class="company">Pyramyd Formation à Paris (75)</div>
-                                        <p>Apprentissage des nouvelles propriétés CSS3 (font_face, header, nav, text-shadow...), création de canvas 2D-3D et animations CSS3.</p>
+                                        <p>Apprentissage des nouvelles propriétés CSS3 (font-face, header, nav, text-shadow...), création de canvas 2D-3D et animations CSS3.</p>
                                     </div>
                                 </li>
                                 <li>
