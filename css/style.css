@@ -71,20 +71,22 @@ article { padding: 2%; }
 #skills .btn { padding: 12px 10px 10px 10px; margin-top: 5px; }
 
 /* PARCOURS */
-#career { overflow: hidden; padding: 0; width: 100%; }
-#career > div { background: #0f1821; padding: 2%; width: 46%; height: 610px; float: left; }
+#career { overflow: hidden; padding: 0; background: #0f1821; }
+#career > div { padding: 2%; width: 46%; float: left; }
 #career p { font-size: 0.9em; }
 #career .timeline { position: relative; }
-#career .timeline .line { position: absolute; background-color: #FFF; width: 2px; height: 550px; border-radius: 5px; left: 4.5%; }
+#career .timeline .line { position: absolute; background-color: #FFF; width: 2px; height: 546px; border-radius: 5px; left: 4.5%; }
 #career .timeline ul { margin-top: 10px; float: left; }
-#career .timeline li { width: 100%; float: left; margin-bottom: 20px; }
-#career .timeline .container { width: 80%; height: auto; background-color: #FFF; color: #0f1821; position: relative; padding: 20px; float: right; line-height: 1em; }
+#career .timeline li { position: relative; width: 100%; float: left; margin-bottom: 20px; }
+#career .timeline .expanded .container { max-height: none; }
+#career .timeline .container { width: 80%; height: auto; background-color: #FFF; color: #0f1821; position: relative; padding: 20px; float: right; line-height: 1em; max-height: 98px; }
 #career .timeline .container:after { top: 9px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-width: 10px; }
 #career .timeline .container.left:after { right: -18px; border-left-color: #FFF; }
 #career .timeline .container.right:after { left: -18px; border-right-color: #FFF; }
 #career .timeline .container h4 { font-family: "hermesBold"; font-size: 1.1em; float: left; color: #34495E;}
 #career .timeline .container .date { font-family: "hermesBold"; font-size: 0.9em; float: right; line-height: 1.2em; }
 #career .timeline .container p { margin-top: 10px; }
+#career .timeline .container a { color: #0f1821; }
 #career .timeline .container strong { font-family: "hermesBold"; }
 #career .timeline .container ul { list-style-type: disc; }
 #career .timeline .container ul li { font-size: 0.9em; margin: 0; margin-left: 4%; padding: 0; width: 96%; }
@@ -95,6 +97,10 @@ article { padding: 2%; }
 /* EXPÉRIENCES */
 #experiences .icon { background: #E74C3C; }
 #experiences .timeline .container h4 { color: #E74C3C; }
+#experiences .collapsed:after { background: transparent url('../medias/collapse.png') repeat-x; content: ""; display: block; height: 50px; left: 68px; position: relative; top: 88px; width: 470px; }
+#experiences .timeline ul > li .container + .icon { background-color: #1a2530; border-radius: 50%; position: absolute; left: 50%; bottom: -16px; display: block; height: 35px; width: 35px; z-index: 1; top: auto; outline: 0; }
+#experiences .timeline ul > li .container + .icon > i.more { margin: 3px 3px 0 0; }
+#experiences .timeline ul > li.expanded .icon > i.more { margin-top: 2px; background-position: 1px -641px; }
 
 /* FORMATIONS */
 #formations .icon { background: #34495E; }
@@ -107,7 +113,7 @@ article { padding: 2%; }
 #projects > figure figcaption { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0px solid #E74C3C;transition: border-width 0.2s ease 0s, border-color 0.2s ease 0s; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
 #projects > figure figcaption:hover { border: 6px solid #E74C3C; }
 #projects > figure figcaption a:hover .link { background-color: #E74C3C; color: #FFF; opacity: 1; }
-#projects > figure a { display: block; width: 100%; height: 100%; font-size: 0.8em; text-align: center; text-decoration: none; text-transform: uppercase; position: relative; }
+#projects > figure a { display: block; width: 100%; height: 100%; font-size: 0.8em; text-align: center; text-decoration: none; text-transform: uppercase; position: relative; outline: 0; }
 #projects > figure a .link { background-color: #E74C3C; width: 100%; height: 20px; padding-top: 9px; color: #E74C3C; position: absolute; bottom: 0; left: 0; opacity: 0; -o-transition: .3s; -ms-transition: .3s; -moz-transition: .3s; -webkit-transition: .3s; transition: .3s; }
 #projects > figure figcaption .container { display: none; }
 
@@ -124,16 +130,7 @@ article { padding: 2%; }
 #detail .btn, #archives .btn { margin-top: 10px; clear: both; }
 #detail a.close { right: 12px; position: absolute; color: #FFF; background-color: #1A2530; font-size: 0.9em; text-indent: 100%; white-space: nowrap; overflow: hidden; margin: 0; outline: 0; }
 #detail a.close:hover { background-color: #E74C3C; }
-
-
-
-#detail a.next, #detail a.previous {
-	position: absolute;
-	background-color: transparent;
-	right: 12px;
-	bottom: 0;
-	font-size: 0.9em; text-indent: 100%; white-space: nowrap; overflow: hidden; margin: 0; outline: 0;
-}
+#detail a.next, #detail a.previous { position: absolute; background-color: transparent; right: 12px; bottom: 0; font-size: 0.9em; text-indent: 100%; white-space: nowrap; overflow: hidden; margin: 0; outline: 0; }
 #detail a.previous { right: 57px; }
 #detail a.next.disable, #detail a.previous.disable { opacity: 0.1; cursor: default; }
 
@@ -177,6 +174,7 @@ footer a.archives:hover { color: #1a2530; }
 .icon > .top { background-position: 1px -641px; }
 .icon > .next { background-position: 1px -672px; }
 .icon > .previous { background-position: 0px -704px; }
+.icon > .more { background-position: 1px -736px; }
 
 /* ICONS - HOVER */
 footer .contact li a:hover .icon > .github { background-position: -34px -478px; }
@@ -187,9 +185,3 @@ footer .contact li a:hover .icon > .phone { background-position: -34px -513px; }
 footer .contact li a:hover .icon > .email { background-position: -34px -545px; }
 a.icon:hover:not(.disable) > .next { background-position: -34px -672px; }
 a.icon:hover:not(.disable) > .previous { background-position: -34px -704px; }
-
-/* KONAMI */
-#secret { position: absolute; background: #000; top: 0; left: 0; width: 100%; height: 1119px; display: none; }
-#secret #videos li { width: 25%; height: 373px; float: left; }
-#secret #videos li.title { width: 50%; background: #000; }
-#secret #videos li.title img { width: 100%; height: 100%; max-width: 490px; display: block; margin: 0 auto; }

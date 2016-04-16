@@ -38,7 +38,7 @@
         <meta name="theme-color" content="#ffffff">
         <title>Maxime Neuville - Développeur web Symfony2 à La Rochelle</title>
         <!-- Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -69,7 +69,7 @@
                     <h2>À propos<span class="border"></span></h2>
                     <div class="clearfix"></div>
                     <p>Développeur web de <?php echo date_diff(date_create('1985-09-25'), date_create('today'))->y; ?> ans, je me spécialise dans la création d'applications&nbsp;métier sous Symfony et leurs adaptations sur support mobile.</p>
-                    <p class="last">Actuellement en poste chez <a href="http://www.rc2c.fr" title="Ouvrir le site de RC2C (nouvelle fenêtre)" target="_blank">RC2C</a> à La Rochelle, venez découvrir mon parcours et mes projets.</p>
+                    <p class="last">Actuellement en poste chez <a href="http://www.sellsy.fr" title="Ouvrir le site de Sellsy (nouvelle fenêtre)" target="_blank">Sellsy</a> à La Rochelle, venez découvrir mon parcours et mes projets.</p>
                     <div class="more-info">
                         <h3>... et aussi</h3>
                         <p>Badminton, Football, Plongée&nbsp;sous-marine (N1), Voyages, Nouvelles technologies</p>
@@ -107,12 +107,12 @@
                         <li>
                             <span class="icon"><i class="js"></i></span>
                             <h4>Javascript Objet</h4>
-                            <p>Développement de plugins, utilisation de frameworks (jQuery, Angular, Sencha), Ajax, JSON</p>
+                            <p>Développement et utilisation de frameworks (jQuery, Angular, Ionic, Sencha), Ajax, JSON</p>
                         </li>
                         <li>
                             <span class="icon"><i class="api"></i></span>
                             <h4>API</h4>
-                            <p>Création d'API sécurisée<br />Utilisation : Google, Smoney, OAuth, SystemPay, Yousign</p>
+                            <p>Création d'API sécurisée<br />Utilisation : Google, Smoney, OAuth, SystemPay, Yousign, TheCallR</p>
                         </li>
                         <li>
                             <span class="icon"><i class="conception"></i></span>
@@ -149,11 +149,28 @@
                         <div class="timeline">
                             <div class="line"></div>
                             <ul>
-                                <li>
+                                <li class="expanded">
+                                    <div class="container right">
+                                        <span class="icon">2016</span>
+                                        <h4>Développeur web senior</h4>
+                                        <div class="date">Depuis Mars 2016</div>
+                                        <div class="clearfix"></div>
+                                        <div class="company">Sellsy à La Rochelle (17)</div>
+                                        <p>Startup éditrice d'un logiciel en ligne de gestion de ventes.</p>
+                                        <p>Au sein d'une équipe de 10 développeurs, je développe de nouveaux modules pour faire évoluer la CRM et répondre aux besoins des clients.</p>
+                                        <ul>
+                                            <li>Développemnt de nouveaux modules du SAAS</li>
+                                            <li>Utilisation d'API Google, <strong>Stripe</strong>, Yousign, Societe.com</li>
+                                            <li>Utilisation et amélioration du <strong>framework</strong> interne</li>
+                                            <li>Développement de tests unitaires et fonctionnels</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="collapsed">
                                     <div class="container right">
                                         <span class="icon">2008</span>
                                         <h4>Concepteur/Développeur web</h4>
-                                        <div class="date">Depuis juillet 2008</div>
+                                        <div class="date">Juillet 2008-Mars 2016</div>
                                         <div class="clearfix"></div>
                                         <div class="company">RC2C à La Rochelle (17)</div>
                                         <p>Agence de communication et stratégies numériques engagée dans le développement durable.</p>
@@ -168,8 +185,9 @@
                                             <li>Développement de tests unitaires et fonctionnels</li>
                                         </ul>
                                     </div>
+                                    <a href="#read-more" class="icon"><i class="more"></i></a>
                                 </li>
-                                <li>
+                                <li class="collapsed">
                                     <div class="container right">
                                         <span class="icon">2008</span>
                                         <h4>Développeur web</h4>
@@ -183,6 +201,7 @@
                                             <li>Développement d'un intranet (PHP, SQL, Ajax)</li>
                                         </ul>
                                     </div>
+                                    <a href="#read-more" class="icon"><i class="more"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -241,7 +260,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/lisea.png" alt="" />
+                                <img src="medias/projects/lisea.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement du site internet de la ligne TGV<br />Tours-Bordeaux</h4>
                                     <p>Développement d'un site en Symfony 1.4 avec géolocalisation de contenus transversaux basé sur le CMS <a href="https://github.com/punkave/apostrophe" target="_blank" title="Plus d'informations sur le CMS Apostrophe (nouvelle fenêtre)">Apostrophe</a>. Création d'un outil de newsletter automatisé.</p>
@@ -264,7 +283,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/itl.png" alt="" />
+                                <img src="medias/projects/itl.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement d'un outil de calcul financier</h4>
                                     <p>Refonte de l'outil de calcul interne vers une version en Symfony 2 plus évolutive et modulable pour répondre aux demandes des nouveaux contrats de la société.</p>
@@ -289,7 +308,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/freezy.png" alt="" />
+                                <img src="medias/projects/freezy.jpg" alt="" />
                                 <div class="right">
                                     <h4>Création d'une application de gestion de congélateur pour mobile</h4>
                                     <p>Pour un projet personnel j'ai développé un site en Symfony 2 et une API pour permettre de communiquer avec l'application mobile. L'application est utilisable en mode online ou offline. La synchronisation avec la base de données se fait dès que la connexion est disponible.</p>
@@ -313,10 +332,10 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/maif.png" alt="" />
+                                <img src="medias/projects/maif.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement d'un outil personnalisé de gestion d'évenements pour la MAIF</h4>
-                                    <p>Site en Symfony 2 avec back office pour gérer l'intégralité des contenus, inscriptions et voir les statistiques en temps réel. Création d'une carte de France avec les événements regroupés par département.</p>
+                                    <p>Site en Symfony 2 avec back-office pour gérer l'intégralité des contenus, inscriptions et voir les statistiques en temps réel. Création d'une carte de France avec les événements regroupés par département.</p>
                                     <ul>
                                         <li>Symfony 2</li>
                                         <li>Système d'alertes (email et/ou SMS)</li>
@@ -335,7 +354,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/interlude.png" alt="" />
+                                <img src="medias/projects/interlude.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement du site Internet du camping Interlude (Groupe Sunêlia)</h4>
                                     <p>Site multilingue (4 langues) en Symfony 1.4 basé sur le CMS <a href="https://github.com/punkave/apostrophe" target="_blank" title="Plus d'informations sur le CMS Apostrophe (nouvelle fenêtre)">Apostrophe</a> et connecté avec la plate-forme WebCamp pour gérer les locations et réservations.</p>
@@ -356,14 +375,14 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/simpson.png" alt="" />
+                                <img src="medias/projects/simpson.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement du site et base produits pour le leader mondial des connexions pour la construction bois</h4>
                                     <p>Site multilingue en Symfony 1.4 basé sur le CMS <a href="https://github.com/punkave/apostrophe" target="_blank" title="Plus d'informations sur le CMS Apostrophe (nouvelle fenêtre)">Apostrophe</a> connecté au PIM (Product Information Management) en Symfony 2.</p>
                                     <ul>
                                         <li>Symfony 1.4 et 2</li>
                                         <li>Création d'une API documentée</li>
-                                        <li>Site et base produits multilingue (11 langues)</li>
+                                        <li>Site et base produits multilingue (12 langues)</li>
                                         <li>Connexion avec l'API <a href="http://fr.calameo.com" target="_blank" title="Plus d'informations sur les fonctionnalités de Calaméo (nouvelle fenêtre)">Calaméo</a></li>
                                         <li>Tâches planifiées (CRON)</li>
                                         <li>Travail en équipe</li>
@@ -379,7 +398,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/orange-bleue.png" alt="" />
+                                <img src="medias/projects/orange-bleue.jpg" alt="" />
                                 <div class="right">
                                     <h4>Création du site Internet de L'Orange Bleue de Montaigu-Boufféré</h4>
                                     <p>L'Orange Bleue est une franchise de club de fitness leader en France.</p>
@@ -402,7 +421,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/lumo.png" alt="" />
+                                <img src="medias/projects/lumo.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement d'une plateforme en ligne de financement participatif</h4>
                                     <p>Lumo France est un site de crowdfunding qui met en avant des projets d'énergies renouvelables. Site développé en Symfony 1.4 basé sur le CMS <a href="https://github.com/punkave/apostrophe" target="_blank" title="Plus d'informations sur le CMS Apostrophe (nouvelle fenêtre)">Apostrophe</a> avec inscription et espace client. Solution de paiement et système de tirelire</p>
@@ -426,7 +445,7 @@
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/les-lutins-de-noel.png" alt="" />
+                                <img src="medias/projects/les-lutins-de-noel.jpg" alt="" />
                                 <div class="right">
                                     <h4>Création d'un jeu pour les voeux de l'agence RC2C</h4>
                                     <p>En 2008, l'agence RC2C (Intelliance) souhaitait un jeu intégrant l'équipe pour fêter la fin d'année. Jeu d'adresse et rapidité développé sous Adobe Flash.</p>
@@ -441,12 +460,12 @@
                             </div>
                         </figcaption>
                     </figure>
-                    <figure data-id="10">
+                    <!-- <figure data-id="10">
                         <img src="medias/projects/campus-insa_thumb.png" alt="Logo du projet Campus INSA" />
                         <figcaption>
                             <a href="#show"><span class="link">Afficher le projet</span></a>
                             <div class="container">
-                                <img src="medias/projects/campus-insa.png" alt="" />
+                                <img src="medias/projects/campus-insa.jpg" alt="" />
                                 <div class="right">
                                     <h4>Développement du site internet du campus de l'enseigne INSA Val de Loire.</h4>
                                     <p>Le site du campus INSA développé sur Drupal 7 est découpé en 7 sous-sites et un portail qui fait remonter les informations de chacun de ses sous-sites.</p>
@@ -455,10 +474,34 @@
                                         <li>Création de modules</li>
                                         <li>Travail en équipe</li>
                                         <li>Gestion des droits par sous-site</li>
-                                        <li>Javascript (Masonry, load more...)
+                                        <li>Javascript (Masonry, load more...)</li>
                                         <li>Méthodes agiles</li>
                                     </ul>
                                     <a href="http://campus.insa-cvl.fr" class="btn" target="_blank" title="Voir le site du Campus INSA (nouvelle fenêtre)">Voir le site du Campus INSA</a>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure> -->
+                    <figure data-id="10">
+                        <img src="medias/projects/cdg44_thumb.png" alt="Logo du projet CDG 44" />
+                        <figcaption>
+                            <a href="#show"><span class="link">Afficher le projet</span></a>
+                            <div class="container">
+                                <img src="medias/projects/cdg44.jpg" alt="" />
+                                <div class="right">
+                                    <h4>Développement du site internet du Centre de Gestion de la Fonction Publique Territoriale de Loire-Atlantique (CDG 44).</h4>
+                                    <p>Le site du CDG 44 est développé sur Drupal 7 et propose aux internautes de regrouper toutes les informations lié aux concours, examens, actualités juridiques et emplois de la fonction publique.</p>
+                                    <ul>
+                                        <li>Drupal 7</li>
+                                        <li>Configuration de modules</li>
+                                        <li>Travail en équipe</li>
+                                        <li>API Google Maps</li>
+                                        <li>Connexion <a href="https://fr.wikipedia.org/wiki/Security_assertion_markup_language" target="_blank" title="Plus d'informations sur le SAML (nouvelle fenêtre)">SAML</a> / <a href="http://lemonldap-ng.org" target="_blank" title="Plus d'informations sur LemonLDAP (nouvelle fenêtre)">LemonLDAP</a></li>
+                                        <li>Création de modules (agenda, routing, médiathèque, glossaire, recherche...)</li>
+                                        <li>Création de commandes <a href="http://www.drush.org" target="_blank" title="Plus d'informations sur Drush (nouvelle fenêtre)">Drush</a></li>
+                                        <li>Méthodes agiles</li>
+                                    </ul>
+                                    <a href="http://www.cdg44.fr" class="btn" target="_blank" title="Voir le site du CDG 44 (nouvelle fenêtre)">Voir le site du CDG 44</a>
                                 </div>
                             </div>
                         </figcaption>
