@@ -53,7 +53,8 @@ article { padding: 2%; }
 #about p.last { margin: 0; }
 #about a { text-decoration: none; font-family: "hermesBold"; }
 #about a:hover { color: #1A2530; -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s;}
-#about .arrow { position: absolute; bottom: -37px; left: 50%; margin-left: -33px; background: transparent url('../medias/about-arrow.png') no-repeat; width: 66px; height:	37px; }
+#about .arrow { position: absolute; bottom: -32px; left: 50%; margin-left: -33px; width: 0; height: 0; border-style: solid; border-width: 32px 33px 0 33px; border-color: #2D4156 transparent transparent transparent; }
+#about .arrow:after { content: ""; position: absolute; bottom: 12px; left: 50%; margin-left: -20px; width: 0; height: 0; border-style: solid; border-width: 20px 20px 0; border-color: #e74c3c transparent transparent transparent; }
 #about .more-info { position: absolute; width: 210px; right: 0; top: 25px; padding: 30px 16px 0 0; }
 #about .more-info h3 { background: #2c3e50; text-transform: uppercase; font-size: 1em; padding: 5px 8px; width: 230px; color: #FFF; margin: 0; position: absolute; right: -20px; top: 0px; }
 #about .more-info h3:after { border-width: 10px; border-style: solid; border-color: #0f1821 transparent transparent #0f1821; bottom: -20px; content: ""; position: absolute; right: 0; }
